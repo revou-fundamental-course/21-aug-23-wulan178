@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="/js/script.js"></script>
+        <title>XYZ</title>
+    </head>
+
+    <body>
+        <main>
+            <!-- START: HEADER -->
+            <header>
+                <img src="https://img.freepik.com/premium-vector/education-school-logo-design_586739-1335.jpg?w=2000" alt="Logo" />
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/our-profile.html">Our profile</a></li>
+                    <li><a href="/">Achievement</a></li>
+                    <li><a href="#message">Message us</a></li>
+                </ul>
+            </header>
+            <!-- END: HEADER -->
+
+            <!-- START: BANNER -->
+            <section class="banner">
+                <div class="banner-bg"></div>
+                <div class="banner-content">
+                    <h1>
+                        Hi
+                        <script>{document.write(name);}</script>, Welcome to XYZ Senior High School Website
+                    </h1>
+                </div>
+            </section>
+            <!-- END: BANNER -->
+
+            <!-- START: FACILITATION -->
+            <section class="facilitation">
+                <h2>Our Facilitation</h2>
+                <ul>
+                    <li class="facilitation-item">
+                        <div class="image"></div>
+                        <p>Professional Teacher</p>
+                    </li>
+                    <li class="facilitation-item">
+                        <div class="image"></div>
+                        <p>Sport Field</p>
+                    </li>
+                    <li class="facilitation-item">
+                        <div class="image"></div>
+                        <p>Classroom</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- END: FACILITATION -->
+
+            <!-- START: MESSAGE FORM -->
+            <section class="message" id="message">
+                <h2>Message us</h2>
+                <div class="message-content">
+                    <!-- START: FORM -->
+                    <form id="myForm">
+                        <div class="message-input">
+                            <label for="name">Nama</label>
+                            <span style="margin-right: 10px">:</span>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+                        </div>
+                        <div class="message-input">
+                            <label for="birthdate">Tanggal lahir</label>
+                            <span style="margin-right: 10px">:</span>
+                            <input type="date" id="birthdate" name="birthdate" required />
+                        </div>
+                        <div class="message-input">
+                            <label for="email">Email</label>
+                            <span style="margin-right: 10px">:</span>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+                        </div>
+                        <div class="message-input">
+                            <label>Gender</label>
+                            <span style="margin-right: 10px">:</span>
+                            <div style="display: flex; align-items: center; gap: 10px">
+                                <div style="display: flex; align-items: center">
+                                    <input type="radio" id="male" name="gender" value="male" checked required />
+                                    <label style="width: 100%" for="male">Laki-laki</label>
+                                </div>
+                                <div style="display: flex; align-items: center">
+                                    <input type="radio" id="female" name="gender" value="female" />
+                                    <label style="width: 100%" for="female">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-input">
+                            <label for="message">Message</label>
+                            <span style="margin-right: 10px">:</span>
+                            <textarea id="userMessage" name="message" placeholder="Tuliskan pesan Anda" required></textarea>
+                        </div>
+                        <button type="button" onclick="validateForm()">Submit</button>
+                    </form>
+                    <!-- END: FORM -->
+
+                    <!-- START: PREVIEW CARD -->
+                    <div id="preview" class="preview-card" style="display: none"></div>
+                    <!-- END: PREVIEW CARD -->
+                </div>
+            </section>
+            <!-- END: MESSAGE FORM -->
+        </main>
+    </body>
+</html>
